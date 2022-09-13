@@ -1,2 +1,2 @@
-def mensaje(n1 =5):
-    print(n1**4)
+def mensaje(fecha):
+    print(fecha)
