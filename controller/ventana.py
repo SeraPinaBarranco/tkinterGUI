@@ -1,11 +1,11 @@
 from tkcalendar import DateEntry
 from tkinter import Button, Label, StringVar, Tk
-import funciones
+from controller import funciones
+
 
 tk = Tk()
 sel = StringVar()
 lb = ""
-
 
 def cargar_ventana():
     
@@ -22,6 +22,6 @@ def cargar_ventana():
 
 def cambiar_label():
     lb.config(text=sel.get())
-
 lb = Label(tk,text=sel.get(),bg='red').pack()
-sel.trace('w',cambiar_label)
+
+

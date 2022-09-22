@@ -1,9 +1,12 @@
-
-import ventana as v
-import funciones
+from controller import ventana as ventana
 
 
-v.cargar_ventana()
+def inicio():
+
+    ventana.cargar_ventana()
 
 
-print  (v.sel.get())
+    #print  (ventana.sel.get())
+
+if __name__ == "__main__":
+    inicio()
